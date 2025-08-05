@@ -6,7 +6,7 @@
       msg: "hello all i am learning {{ COURSE }}, duration: {{ DURATION }} trainer: {{ TRAINER }}"
 
 - name: varibles from inventory file local
-  hosts: localhost
+  hosts: local
   connection: local
   tasks:
   - name: print varaibles from inventory file
