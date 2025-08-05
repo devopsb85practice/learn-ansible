@@ -3,7 +3,7 @@
   tasks:
   - name: print varaibles from inventory file
     ansible.builtin.debug:
-    msg: "hello all i am learning {{ COURSE }}, duration: {{ DURATION }} trainer: {{ TRAINER }}"
+      msg: "hello all i am learning {{ COURSE }}, duration: {{ DURATION }} trainer: {{ TRAINER }}"
 
 - name: varibles from inventory file local
   hosts: localhost
@@ -11,4 +11,4 @@
   tasks:
   - name: print varaibles from inventory file
     ansible.builtin.debug:
-    msg: "hello all i am learning {{ COURSE }}, duration: {{ DURATION }} trainer: {{ TRAINER }}"
+      msg: "hello all i am learning {{ COURSE }}, duration: {{ DURATION }} trainer: {{ TRAINER }}"
