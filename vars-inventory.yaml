@@ -1,11 +1,11 @@
-- name: varibles from inventory file
+- name: variables from inventory file
   hosts: frontend
   tasks:
   - name: print varaibles from inventory file
     ansible.builtin.debug:
       msg: "hello all i am learning {{ COURSE }}, duration: {{ DURATION }} trainer: {{ TRAINER }}"
 
-- name: varibles from inventory file local
+- name: variables from inventory file local
   hosts: local
   connection: local
   tasks:
