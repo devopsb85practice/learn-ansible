@@ -11,8 +11,8 @@
   - name: print if number is less than 100
     ansible.builtin.debug:
       msg: "number {{ NUMBER }} less than 100"
-    when: NUMBER < 100
+    when: NUMBER | int < 100
   - name: print if number is greater than 100
     ansible.builtin.debug:
       msg: "number {{ NUMBER }} greater than 100"
-    when: NUMBER > 100
+    when: NUMBER | int > 100
