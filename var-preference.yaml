@@ -1,10 +1,10 @@
 - name: varaible preference
   hosts: local
   connection: local
-  # vars:
-  #   GREETING: "HELLO FROM PLAY"  #3 preference
-  vars_files:
-  - course.yaml
+  vars:
+    GREETING: "HELLO FROM PLAY"  
+  # vars_files:
+  # - course.yaml  #3 preference
   vars_prompt:
   - name: GREETING
     prompt: enter your GREETING
