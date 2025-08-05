@@ -1,0 +1,21 @@
+- firstname: lakshmi
+  lastname: velaga
+  email: prasanna.v373@gmail.com
+  addresses: #
+  - type: perm
+    doorno: 39
+    stret: hammersly blvd
+  - type: perm
+    doorno: 39
+    stret: hammersly blvd
+- firstname: lakshmi
+  lastname: velaga
+  email: prasanna.v373@gmail.com
+  addresses: #
+  - type: perm
+    doorno: 39
+    stret: hammersly blvd
+  - type: perm
+    doorno: 39
+    stret: hammersly blvd
+
