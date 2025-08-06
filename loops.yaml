@@ -1,0 +1,13 @@
+- name: loops
+  hosts: frontend
+  become: yes
+  tasks:
+  - name: loops
+    ansible.builtin.package:
+      name: nginx
+      state: installed
+    loop:
+    - nginx
+    - mysql
+    - zip
+    
