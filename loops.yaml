@@ -1,27 +1,27 @@
-- name: loops
-  hosts: frontend
-  become: yes
-  tasks:
-  - name: loops
-    ansible.builtin.package:
-      name: "{{ item }}"
-      state: installed
-    loop:
-    - nginx
-    - mysql
-    - zip
-
-
-
 # - name: loops
 #   hosts: frontend
 #   become: yes
 #   tasks:
 #   - name: loops
 #     ansible.builtin.package:
-#       name: "{{ item.name }}"
-#       state: "{{ item.state }}
+#       name: "{{ item }}"
+#       state: installed
 #     loop:
 #     - nginx
 #     - mysql
 #     - zip
+
+
+
+- name: loops
+  hosts: frontend
+  become: yes
+  tasks:
+  - name: loops
+    ansible.builtin.package:
+      name: "{{ item.name }}"
+      state: "{{ item.state }}
+    loop:
+    - { name: 'nginx', state: 'installed'}
+    - { name: 'mysql', state: 'abscent'}
+    - { name: 'zip', state: 'abscent'} 
