@@ -1,0 +1,13 @@
+- name: instal nginx 
+  hosts: dunamic_frontend
+  become: yes
+  serial: 5
+  tasks:
+  - name: install nginx
+    ansible.builtin.dnf:
+      name: nginx
+      state: installed
+  - name: run nginx
+    ansible.builtin.service:
+      name: nginx
+      state: started
