@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   tasks:
-  - name: check roboshop enxist or not
+  - name: check roboshop exist or not
     ansible.builtin.command: id roboshop
     register: output
     ignore_errors: true
@@ -14,4 +14,4 @@
   - name: user alreday exists
     ansible.builtin.debug:
       msg: "user already exists"
-    when: output.rc== 0 #above task is true
+    when: output.rc == 0 #above task is true
